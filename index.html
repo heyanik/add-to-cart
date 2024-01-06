@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart Demo</title>
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header class="bg-zinc-100 text-black text-center flex justify-between px-60">
+        <div class="py-2 px-2 uppercase font-medium" >
+            <a href="" class="font-bold text-xl mr-10">Logo</a>
+            <a href="" class="m-1">Menu</a>
+            <a href=""class="m-1">Reward</a>
+            <a href=""class="m-1">Locations</a>
+            <a href=""class="m-1">Gift Cards</a>
+            <a href=""class="m-1">Login</a>
+        </div>
+        <div class="flex" id="cart-icon">
+         <i class="bi bi-bag-fill cursor-pointer" style="font-size: 30px;"><span class="bg-[#eb5b48] absolute rounded-lg text-white w-5 h-5 text-sm p-0 mr-18 " id="cart-count">0</span></i>
+        
+        <button  class="bg-[#eb5b48] text-white cursor-pointer px-4 py-2 rounded-lg hover:bg-[#555] ml-8">Order Now</button>
+        </div>
+  </header>
+  <main>
+      <section id="menu" class="flex">
+        <!-- Food items with "Add to Cart" buttons -->
+      <!-- Each item may have a unique ID and price -->
+    </section>
+    <aside id="cart">
+        <div id="cart-header" class="flex justify-between bg-white p-2">
+            <h2><i class="bi bi-bag-fill" style="background: inherit;"></i> <span id="cart-item-count">0</span> items</h2>
+          <button id="close-cart" class="rounded-lg border border-[#eb5b48] hover:text-white " onclick="toggleCart()">Close</button>
+        </div>
+        <div id="cart-content">
+          <ul id="cart-items">
+            <!-- Cart details and added items displayed here -->
+          </ul>
+          <div id="cart-total">
+            Total: $ <br><span id="total-price" class="text-[#eb5b48]">0.00</span>
+          </div>
+        </div>
+      </aside>
+  </main>
+  <!-- Include JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
